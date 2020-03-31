@@ -1,3 +1,5 @@
 <template>
-  <div id="portfolio" class="pt-16 min-h-screen border border-yellow-500">Portfolio</div>
+  <div id="portfolio" class="bg-teal-400 min-h-screen">
+    Portfolio
+  </div>
 </template>

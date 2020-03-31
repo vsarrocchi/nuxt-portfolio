@@ -1,10 +1,12 @@
 <template>
   <div>
     <Home />
-    <About />
-    <Skills />
-    <Portfolio />
-    <Contact />
+    <div class="content-wrapper">
+      <About />
+      <Skills />
+      <Portfolio />
+      <Contact />
+    </div>
   </div>
 </template>
 
