@@ -7,6 +7,7 @@
     <Portfolio />
     <Contact />
     <Footer />
+    <!-- <Social class="border border-black" /> -->
   </div>
 </template>
 
@@ -17,6 +18,7 @@ import Skills from '../components/skills'
 import Portfolio from '../components/portfolio'
 import Contact from '../components/contact'
 import Footer from '../components/footer'
+// import Social from '../components/social'
 
 export default {
   components: {
@@ -26,6 +28,7 @@ export default {
     Portfolio,
     Contact,
     Footer
+    // Social
   }
 }
 </script>

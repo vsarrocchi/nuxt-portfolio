@@ -32,8 +32,19 @@
         </li>
       </ul>
     </div>
+    <!-- <Social class="border border-black" /> -->
   </div>
 </template>
+
+<script>
+// import Social from '../components/social'
+
+export default {
+  components: {
+    // Social
+  }
+}
+</script>
 
 <style>
 #menu {
