@@ -1,12 +1,12 @@
+/* eslint-disable nuxt/no-globals-in-created */
 <template>
-  <div>
+  <div id="content-wrapper" class="content-wrapper">
     <Home />
-    <div class="content-wrapper">
-      <About />
-      <Skills />
-      <Portfolio />
-      <Contact />
-    </div>
+    <About />
+    <Skills />
+    <Portfolio />
+    <Contact />
+    <Footer />
   </div>
 </template>
 
@@ -16,6 +16,7 @@ import About from '../components/about'
 import Skills from '../components/skills'
 import Portfolio from '../components/portfolio'
 import Contact from '../components/contact'
+import Footer from '../components/footer'
 
 export default {
   components: {
@@ -23,15 +24,12 @@ export default {
     About,
     Skills,
     Portfolio,
-    Contact
+    Contact,
+    Footer
   }
 }
 </script>
 
-<style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-  @apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
+<style lang="css">
+@import '@/assets/css/styles.css';
 </style>

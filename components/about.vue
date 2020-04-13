@@ -1,5 +1,5 @@
 <template>
-  <div id="about" class="about bg-yellow-300 min-h-screen">
+  <div id="about" class="about section bg-white min-h-screen">
     About
   </div>
 </template>

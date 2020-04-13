@@ -5,35 +5,97 @@
   </head>
   <body {{ BODY_ATTRS }}>
     {{ APP }}
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
     <script>
-      $(document).ready(function() {
-        $(window).on('scroll', function() {
-          if ($(window).scrollTop() < 1000) {
-            $('.home').css(
-              'background-size',
-              130 + parseInt($(window).scrollTop() / 5) + '%'
-            )
-            $('.home h1').css('top', 50 + $(window).scrollTop() * 0.1 + '%')
-            $('.home h1').css('opacity', 1 - $(window).scrollTop() * 0.003)
-          }
+      ;(function() {
+        var section = document.querySelectorAll('.section')
+        var sections = {}
+        var i = 0
 
-          if (
-            $(window).scrollTop() >=
-            $('.content-wrapper').offset().top - 300
-          ) {
-            $('.nav-bg').removeClass('bg-hidden')
-            $('.nav-bg').addClass('bg-visible')
-          } else {
-            $('.nav-bg').removeClass('bg-visible')
-            $('.nav-bg').addClass('bg-hidden')
+        Array.prototype.forEach.call(section, function(e) {
+          sections[e.id] = e.offsetTop
+        })
+
+        var contentWrapper = document.querySelector('#content-wrapper')
+
+        contentWrapper.onscroll = function() {
+          var scrollPosition = contentWrapper.scrollTop
+          for (i in sections) {
+            if (sections[i] <= scrollPosition) {
+              document.querySelector('.active').setAttribute('class', ' ')
+              document
+                .querySelector('a[href*=' + i + ']')
+                .setAttribute('class', 'active')
+            }
           }
+        }
+      })()
+
+      $(document).ready(function() {
+        $('#menu').on('click', function() {
+          $('#menu').css('opacity', '0')
+          $('#lgMenu').addClass('enter')
+        })
+        $('#exit').on('click', function() {
+          $('#lgMenu').removeClass('enter')
+          $('#menu').css('opacity', '1')
         })
       })
+
+      const name = document.querySelectorAll('#myName path')
+
+      for (let i = 0; i < name.length; i++) {
+        console.log('Letter ' + i + ' is ' + name[i].getTotalLength())
+      }
+
+      // $(document).ready(function() {
+      // $('.content-wrapper').on('scroll', function() {
+      //   //scrollspy
+      //   var sections = $('.section'),
+      //     nav = $('nav'),
+      //     nav_height = nav.outerHeight(),
+      //     cur_pos = $(this).scrollTop()
+      //   sections.each(function() {
+      //     var top = $(this).offset().top - nav_height,
+      //       bottom = top + $(this).outerHeight()
+
+      //     if (cur_pos >= top && cur_pos <= bottom) {
+      //       nav.find('a').removeClass('active')
+      //       sections.removeClass('active')
+
+      //       $(this).addClass('active')
+      //       nav
+      //         .find('a[href="#' + $(this).attr('id') + '"]')
+      //         .addClass('active')
+      //     }
+      //   })
+
+      // header scroll
+      // if ($(window).scrollTop() < 1000) {
+      //   $('.home-scroll').css(
+      //     'background-size',
+      //     100 + parseInt($(window).scrollTop() / 5) + '%'
+      //   )
+      //   $('.home h1').css('top', 50 + $(window).scrollTop() * 0.1 + '%')
+      //   $('.home h1').css('opacity', 1 - $(window).scrollTop() * 0.003)
+      // }
+
+      // if (
+      //   $(window).scrollTop() >=
+      //   $('.content-wrapper').offset().top - 300
+      // ) {
+      //   $('.nav-bg').removeClass('bg-hidden')
+      //   $('.nav-link-color').removeClass('nav-link-color-1')
+      //   $('.nav-bg').addClass('bg-visible')
+      //   $('.nav-link-color').addClass('nav-link-color-2')
+      // } else {
+      //   $('.nav-bg').removeClass('bg-visible')
+      //   $('.nav-link-color').removeClass('nav-link-color-2')
+      //   $('.nav-bg').addClass('bg-hidden')
+      //   $('.nav-link-color').addClass('nav-link-color-1')
+      // }
+      //   })
+      // })
     </script>
   </body>
 </html>
