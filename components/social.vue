@@ -29,7 +29,7 @@
 
 .social-media-contact i {
   padding: 1rem 1rem;
-  color: #8b1adc;
+  color: black;
 }
 
 @media (min-width: 768px) {
@@ -42,6 +42,7 @@
   }
 
   .social-media-contact i {
+    font-size: 20px;
     padding: 1rem 2rem;
   }
 

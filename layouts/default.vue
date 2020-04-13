@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <div class="app">
     <Header />
     <div>
       <nuxt />
     </div>
-    <Social class="border border-black" />
+    <Social />
   </div>
 </template>
 

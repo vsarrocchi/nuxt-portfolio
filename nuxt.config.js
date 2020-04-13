@@ -23,6 +23,10 @@ export default {
       {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css?family=Quicksand&display=swap'
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://use.fontawesome.com/releases/v5.6.1/css/all.css'
       }
     ]
   },
@@ -33,7 +37,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['~/assets/css/styles.css'],
   /*
    ** Plugins to load before mounting the App
    */

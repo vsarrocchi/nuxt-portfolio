@@ -150,7 +150,7 @@ export default {}
 }
 
 #myName path:nth-child(1) {
-  stroke-dasharray: 442.6150207519531, 442.6150207519531;
+  stroke-dasharray: 442.6150207519531;
   stroke-dashoffset: 442.6150207519531;
   animation: line-anim 2s ease forwards;
 }
@@ -158,83 +158,83 @@ export default {}
 #myName path:nth-child(2) {
   stroke-dasharray: 463.0750732421875;
   stroke-dashoffset: 463.0750732421875;
-  animation: line-anim 2s ease forwards 0.3s;
+  animation: line-anim 2s ease forwards 0.25s;
 }
 
 #myName path:nth-child(3) {
   stroke-dasharray: 231.55197143554688;
   stroke-dashoffset: 231.55197143554688;
-  animation: line-anim 2s ease forwards 0.6s;
+  animation: line-anim 2s ease forwards 0.5s;
 }
 
 #myName path:nth-child(4) {
   stroke-dasharray: 462.1805114746094;
   stroke-dashoffset: 462.1805114746094;
-  animation: line-anim 2s ease forwards 0.9s;
+  animation: line-anim 2s ease forwards 0.75s;
 }
 
 #myName path:nth-child(5) {
   stroke-dasharray: 388.574951171875;
   stroke-dashoffset: 388.574951171875;
-  animation: line-anim 2s ease forwards 1.2s;
+  animation: line-anim 2s ease forwards 1s;
 }
 
 #myName path:nth-child(6) {
   stroke-dasharray: 363.046630859375;
   stroke-dashoffset: 363.046630859375;
-  animation: line-anim 2s ease forwards 1.5s;
+  animation: line-anim 2s ease forwards 1.25s;
 }
 
 #myName path:nth-child(7) {
   stroke-dasharray: 463.0751037597656;
   stroke-dashoffset: 463.0751037597656;
-  animation: line-anim 2s ease forwards 1.8s;
+  animation: line-anim 2s ease forwards 1.5s;
 }
 
 #myName path:nth-child(8) {
   stroke-dasharray: 509.4784851074219;
   stroke-dashoffset: 509.4784851074219;
-  animation: line-anim 2s ease forwards 2.1s;
+  animation: line-anim 2s ease forwards 1.75s;
 }
 #myName path:nth-child(9) {
   stroke-dasharray: 463.0752258300781;
   stroke-dashoffset: 463.0752258300781;
-  animation: line-anim 2s ease forwards 2.4s;
+  animation: line-anim 2s ease forwards 2s;
 }
 #myName path:nth-child(10) {
   stroke-dasharray: 231.6293182373047;
   stroke-dashoffset: 231.6293182373047;
-  animation: line-anim 2s ease forwards 2.7s;
+  animation: line-anim 2s ease forwards 2.25s;
 }
 #myName path:nth-child(11) {
   stroke-dasharray: 231.6291961669922;
   stroke-dashoffset: 231.6291961669922;
-  animation: line-anim 2s ease forwards 3.1s;
+  animation: line-anim 2s ease forwards 2.5s;
 }
 #myName path:nth-child(12) {
   stroke-dasharray: 392.7377014160156;
   stroke-dashoffset: 392.7377014160156;
-  animation: line-anim 2s ease forwards 3.4s;
+  animation: line-anim 2s ease forwards 2.75s;
 }
 #myName path:nth-child(13) {
   stroke-dasharray: 363.0469970703125;
   stroke-dashoffset: 363.0469970703125;
-  animation: line-anim 2s ease forwards 3.7s;
+  animation: line-anim 2s ease forwards 3s;
 }
 #myName path:nth-child(14) {
   stroke-dasharray: 363.06158447265625;
   stroke-dashoffset: 363.06158447265625;
-  animation: line-anim 2s ease forwards 4.1s;
+  animation: line-anim 2s ease forwards 3.25s;
 }
 #myName path:nth-child(15) {
   stroke-dasharray: 451.5950012207031;
   stroke-dashoffset: 451.5950012207031;
-  animation: line-anim 2s ease forwards 4.4s;
+  animation: line-anim 2s ease forwards 3.5s;
 }
 #myName path:nth-child(16) {
   stroke-dasharray: 219.48826599121094;
   stroke-dashoffset: 219.48826599121094;
-  animation: line-anim 2s ease forwards 4.7s;
+  animation: line-anim 2s ease forwards 3.75s;
 }
 
 @keyframes line-anim {
