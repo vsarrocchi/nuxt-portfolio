@@ -26,7 +26,8 @@ export default {
       },
       {
         rel: 'stylesheet',
-        href: 'https://use.fontawesome.com/releases/v5.6.1/css/all.css'
+        href: 'https://use.fontawesome.com/releases/v5.6.1/css/all.css',
+        crossorigin: 'anonymous'
       }
     ]
   },

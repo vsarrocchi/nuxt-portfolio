@@ -1,6 +1,7 @@
 <template>
-  <div class="app">
-    <Header />
+  <div>
+    <Logo />
+    <Sidebar />
     <div>
       <nuxt />
     </div>
@@ -9,12 +10,14 @@
 </template>
 
 <script>
-import Header from '../components/header'
+import Logo from '../components/logo'
+import Sidebar from '../components/sidebar'
 import Social from '../components/social'
 
 export default {
   components: {
-    Header,
+    Logo,
+    Sidebar,
     Social
   }
 }

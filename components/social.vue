@@ -29,7 +29,7 @@
 
 .social-media-contact i {
   padding: 1rem 1rem;
-  color: black;
+  color: #393939;
 }
 
 @media (min-width: 768px) {
@@ -48,6 +48,7 @@
 
   .social-media-contact i:hover {
     opacity: 1;
+    color: #ff4f94;
   }
 
   .social-media-box {

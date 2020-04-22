@@ -1,11 +1,7 @@
 <template>
   <div>
-    <div class="logo">
-      <img src="../assets/images/logo.png" alt="logo" />
-    </div>
     <div id="menu">|||</div>
     <div id="lgMenu">
-      <!-- <span id="exit">&times;</span> -->
       <span id="exit">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
           <path
@@ -32,21 +28,16 @@
         </li>
       </ul>
     </div>
-    <!-- <Social class="border border-black" /> -->
   </div>
 </template>
 
 <script>
-// import Social from '../components/social'
-
 export default {
-  components: {
-    // Social
-  }
+  components: {}
 }
 </script>
 
-<style>
+<style lang="scss">
 #menu {
   position: absolute;
   top: 20px;
@@ -56,11 +47,12 @@ export default {
   cursor: pointer;
   text-align: center;
   transition: all 0.5s;
+  color: #393939;
 }
 
 #menu:hover {
   transform: rotate(90deg);
-  color: #ff9900;
+  color: #ff4f94;
 }
 
 ul {
@@ -71,7 +63,7 @@ ul {
 
 li {
   text-align: center;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   height: 70px;
   line-height: 70px;
   margin: 15px 0;
@@ -83,8 +75,8 @@ li {
 }
 
 li:hover {
-  background-color: white;
-  color: black;
+  // background-color: white;
+  // color: black;
   letter-spacing: 0.3em;
   font-size: 1.5em;
 }
@@ -93,14 +85,16 @@ li:hover {
   width: 20%;
   height: 100vh;
   top: 0;
-  right: -400px;
+  right: 0;
   overflow: hidden;
   background-color: #393939;
   box-shadow: 5px 5px 10px grey;
   position: absolute;
-  z-index: 11;
   opacity: 0;
   transition: all 0.25s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #exit {
@@ -113,20 +107,20 @@ li:hover {
   cursor: pointer;
   transition: all 0.25s;
 }
-#exit svg:hover {
-  fill: #ff9900;
+#exit:hover {
+  transform: translateX(5px);
+  path {
+    fill: #ff4f94;
+  }
 }
 
 #lgMenu.enter {
   opacity: 1;
   right: 0;
+  z-index: 11;
 }
 
-.logo {
-  position: absolute;
-  top: 20px;
-  left: 30px;
-  width: 50px;
-  z-index: 111;
+.active {
+  color: #0ccccc;
 }
 </style>
