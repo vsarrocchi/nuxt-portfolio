@@ -10,34 +10,36 @@
           />
         </svg>
       </span>
-      <ul>
-        <li>
-          <a href="#home" class="active">Home</a>
-        </li>
-        <li>
-          <a href="#about">About</a>
-        </li>
-        <li>
-          <a href="#skills">Skills</a>
-        </li>
-        <li>
-          <a href="#portfolio">Portfolio</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
+      <div id="exit2">
+        <ul>
+          <li>
+            <a href="#home" class="active">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {
-  components: {}
-}
+export default {}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+@import '@/assets/css/styles.css';
+
 #menu {
   position: absolute;
   top: 20px;
@@ -46,13 +48,35 @@ export default {
   font-size: 2em;
   cursor: pointer;
   text-align: center;
-  transition: all 0.5s;
   color: #393939;
+  transition: all 0.5s;
 }
 
 #menu:hover {
-  transform: rotate(90deg);
   color: #ff4f94;
+  transform: rotate(90deg);
+}
+
+#lgMenu {
+  width: 20%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  background-color: #393939;
+  box-shadow: 5px 5px 10px grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.25s;
+}
+
+#lgMenu.enter {
+  opacity: 1;
+  right: 0;
+  z-index: 11;
 }
 
 ul {
@@ -63,7 +87,6 @@ ul {
 
 li {
   text-align: center;
-  // text-transform: uppercase;
   height: 70px;
   line-height: 70px;
   margin: 15px 0;
@@ -71,30 +94,12 @@ li {
   cursor: pointer;
   font-size: 1em;
   letter-spacing: 0.2em;
-  transition: all 0.25s;
+  transition: all 0.5s;
 }
 
 li:hover {
-  // background-color: white;
-  // color: black;
   letter-spacing: 0.3em;
   font-size: 1.5em;
-}
-
-#lgMenu {
-  width: 20%;
-  height: 100vh;
-  top: 0;
-  right: 0;
-  overflow: hidden;
-  background-color: #393939;
-  box-shadow: 5px 5px 10px grey;
-  position: absolute;
-  opacity: 0;
-  transition: all 0.25s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 #exit {
@@ -105,19 +110,14 @@ li:hover {
   height: 30px;
   padding: 0px;
   cursor: pointer;
-  transition: all 0.25s;
+  transition: all 0.5s;
 }
+
 #exit:hover {
   transform: translateX(5px);
   path {
     fill: #ff4f94;
   }
-}
-
-#lgMenu.enter {
-  opacity: 1;
-  right: 0;
-  z-index: 11;
 }
 
 .active {

@@ -17,10 +17,13 @@ body {
   color: #393939;
 }
 
-/* .fixed {
-  z-index: 10;
-} */
+.header {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 1.2s ease-out;
+}
 
-/* .menu {
-  transition: all 0.3s ease;
-} */
+.headerVisible {
+  opacity: 1;
+  transform: translateX(0);
+}

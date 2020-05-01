@@ -90,7 +90,9 @@
   </svg>
 </template>
 
-<style>
+<style lang="scss" scoped>
+@import '@/assets/css/styles.css';
+
 /* SVG animation text */
 #myName {
   animation: fill 0.5s ease forwards 3.5s;

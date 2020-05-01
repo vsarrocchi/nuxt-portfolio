@@ -24,6 +24,8 @@
 </template>
 
 <style lang="scss" scoped>
+@import '@/assets/css/styles.css';
+
 .logo {
   position: absolute;
   top: 20px;

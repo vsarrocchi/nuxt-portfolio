@@ -20,7 +20,9 @@
   </div>
 </template>
 
-<style>
+<style lang="scss" scoped>
+@import '@/assets/css/styles.css';
+
 .social-media-contact {
   display: flex;
   justify-content: center;

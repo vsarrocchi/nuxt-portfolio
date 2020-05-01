@@ -40,62 +40,17 @@
           $('#lgMenu').removeClass('enter')
           $('#menu').css('opacity', '1')
         })
+        $('#exit2').on('click', function() {
+          $('#lgMenu').removeClass('enter')
+          $('#menu').css('opacity', '1')
+        })
       })
 
-      const name = document.querySelectorAll('#myName path')
+      // const name = document.querySelectorAll('#myName path')
 
-      for (let i = 0; i < name.length; i++) {
-        console.log('Letter ' + i + ' is ' + name[i].getTotalLength())
-      }
-
-      // $(document).ready(function() {
-      // $('.content-wrapper').on('scroll', function() {
-      //   //scrollspy
-      //   var sections = $('.section'),
-      //     nav = $('nav'),
-      //     nav_height = nav.outerHeight(),
-      //     cur_pos = $(this).scrollTop()
-      //   sections.each(function() {
-      //     var top = $(this).offset().top - nav_height,
-      //       bottom = top + $(this).outerHeight()
-
-      //     if (cur_pos >= top && cur_pos <= bottom) {
-      //       nav.find('a').removeClass('active')
-      //       sections.removeClass('active')
-
-      //       $(this).addClass('active')
-      //       nav
-      //         .find('a[href="#' + $(this).attr('id') + '"]')
-      //         .addClass('active')
-      //     }
-      //   })
-
-      // header scroll
-      // if ($(window).scrollTop() < 1000) {
-      //   $('.home-scroll').css(
-      //     'background-size',
-      //     100 + parseInt($(window).scrollTop() / 5) + '%'
-      //   )
-      //   $('.home h1').css('top', 50 + $(window).scrollTop() * 0.1 + '%')
-      //   $('.home h1').css('opacity', 1 - $(window).scrollTop() * 0.003)
+      // for (let i = 0; i < name.length; i++) {
+      //   console.log('Letter ' + i + ' is ' + name[i].getTotalLength())
       // }
-
-      // if (
-      //   $(window).scrollTop() >=
-      //   $('.content-wrapper').offset().top - 300
-      // ) {
-      //   $('.nav-bg').removeClass('bg-hidden')
-      //   $('.nav-link-color').removeClass('nav-link-color-1')
-      //   $('.nav-bg').addClass('bg-visible')
-      //   $('.nav-link-color').addClass('nav-link-color-2')
-      // } else {
-      //   $('.nav-bg').removeClass('bg-visible')
-      //   $('.nav-link-color').removeClass('nav-link-color-2')
-      //   $('.nav-bg').addClass('bg-hidden')
-      //   $('.nav-link-color').addClass('nav-link-color-1')
-      // }
-      //   })
-      // })
     </script>
   </body>
 </html>

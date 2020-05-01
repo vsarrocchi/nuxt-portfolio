@@ -1,7 +1,7 @@
 <template>
   <div id="home" class="section home">
     <Svganimation />
-    <div class="text-2xl">Frontend Developer</div>
+    <div class="text-3xl">Frontend Developer</div>
   </div>
 </template>
 
@@ -16,11 +16,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '@/assets/css/styles.css';
+
 /* parallax */
 .home {
   box-sizing: border-box;
   min-height: 100vh;
-  /* padding: 20vw 0 5vw; */
   position: relative;
   transform-style: inherit;
   width: 100vw;

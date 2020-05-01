@@ -37,8 +37,8 @@ export default {
   margin: 0;
   padding: 0;
   perspective: 1px;
-  /* transform-style: preserve-3d; */
-  max-height: 100vh;
+  transform-style: preserve-3d;
+  height: 100vh;
   overflow-y: scroll;
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -58,7 +58,7 @@ export default {
     #a9f7fe 90%,
     #d4c2fc 100%
   );
-  /* mix-blend-mode: hard-light; */
+  mix-blend-mode: hard-light;
   animation-name: gradientanimation;
   animation-duration: 10s;
   animation-iteration-count: infinite;
