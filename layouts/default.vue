@@ -10,6 +10,8 @@
 </template>
 
 <script>
+import anime from 'animejs'
+
 import Logo from '../components/logo'
 import Sidebar from '../components/sidebar'
 import Social from '../components/social'
@@ -47,11 +49,29 @@ export default {
     },
     checkForVisibility() {
       const headers = document.querySelectorAll('.header')
+
       headers.forEach((header) => {
         if (this.isElementInViewport(header)) {
-          header.classList.add('headerVisible')
+          if (header.dataset.hasAppeared === 'true') {
+          } else {
+            header.classList.add('headerVisible')
+            const svgPath = document.querySelectorAll('.path')
+            anime({
+              targets: svgPath,
+              loop: false,
+              opacity: 1,
+              strokeDashoffset: [anime.setDashoffset, 0],
+              easing: 'easeInOutSine',
+              duration: 350,
+              delay: (el, i) => {
+                return i * 100
+              }
+            })
+            header.dataset.hasAppeared = 'true'
+          }
         } else {
           header.classList.remove('headerVisible')
+          header.dataset.hasAppeared = 'false'
         }
       })
     }

@@ -31,6 +31,7 @@ export default {
       }
     ]
   },
+  script: [],
   /*
    ** Customize the progress-bar color
    */

@@ -7,6 +7,7 @@
     {{ APP }}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
     <script>
+      // side nav active
       ;(function() {
         var section = document.querySelectorAll('.section')
         var sections = {}
@@ -31,6 +32,7 @@
         }
       })()
 
+      // side nav menu opacity 0 when click
       $(document).ready(function() {
         $('#menu').on('click', function() {
           $('#menu').css('opacity', '0')
@@ -45,12 +47,6 @@
           $('#menu').css('opacity', '1')
         })
       })
-
-      // const name = document.querySelectorAll('#myName path')
-
-      // for (let i = 0; i < name.length; i++) {
-      //   console.log('Letter ' + i + ' is ' + name[i].getTotalLength())
-      // }
     </script>
   </body>
 </html>

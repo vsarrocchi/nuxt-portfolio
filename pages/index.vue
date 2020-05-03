@@ -3,7 +3,6 @@
   <div id="content-wrapper" class="content-wrapper">
     <Home />
     <About />
-    <Skills />
     <Portfolio />
     <Contact />
     <Footer />
@@ -13,7 +12,6 @@
 <script>
 import Home from '../components/home'
 import About from '../components/about'
-import Skills from '../components/skills'
 import Portfolio from '../components/portfolio'
 import Contact from '../components/contact'
 import Footer from '../components/footer'
@@ -22,7 +20,6 @@ export default {
   components: {
     Home,
     About,
-    Skills,
     Portfolio,
     Contact,
     Footer
