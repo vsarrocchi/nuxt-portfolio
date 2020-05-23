@@ -45,7 +45,7 @@ export default {
   right: 0;
   top: 0;
   display: block;
-  background-image: url('../assets/images/tyler-gooding-z8J0DZzXYDI-unsplash-3.jpg');
+  background-image: url('../assets/images/tyler-gooding-z8J0DZzXYDI-unsplash-4.jpeg?url');
   opacity: 0.3;
   background-size: cover;
   transform-origin: center center 0;
