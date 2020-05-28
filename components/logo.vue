@@ -2,8 +2,8 @@
   <div class="logo">
     <!-- <img src="../assets/images/logo3.png" alt="logo" /> -->
     <svg
-      width="70"
-      height="73"
+      width="50"
+      height="53"
       viewBox="0 0 70 73"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
