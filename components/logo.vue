@@ -1,6 +1,5 @@
-<template>
+<!-- <template>
   <div class="logo">
-    <!-- <img src="../assets/images/logo3.png" alt="logo" /> -->
     <svg
       width="50"
       height="53"
@@ -21,9 +20,9 @@
       <path d="M3 3L35 67L67 3" stroke="#393939" stroke-width="5" />
     </svg>
   </div>
-</template>
+</template> -->
 
-<style lang="scss" scoped>
+<!-- <style lang="scss" scoped>
 @import '@/assets/css/styles.css';
 
 .logo {
@@ -33,4 +32,4 @@
   width: 10%;
   z-index: 111;
 }
-</style>
+</style> -->

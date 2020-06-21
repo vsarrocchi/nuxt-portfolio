@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Logo />
     <Sidebar />
     <div>
       <nuxt />
@@ -11,27 +10,15 @@
 
 <script>
 import anime from 'animejs'
-// import imagemin from 'imagemin'
-// import imageminMozjpeg from 'imagemin-mozjpeg'
 
-import Logo from '../components/logo'
 import Sidebar from '../components/sidebar'
 import Social from '../components/social'
 
 export default {
   components: {
-    Logo,
     Sidebar,
     Social
   },
-  // created() {
-  //   ;(async () => {
-  //     await imagemin(['../assets/images/*.jpg'], 'build/assets/images', {
-  //       use: [imageminMozjpeg()]
-  //     })
-  //     console.log('Images optimized')
-  //   })()
-  // },
   mounted() {
     const visibility = document.getElementById('content-wrapper')
     if (visibility.addEventListener) {

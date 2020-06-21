@@ -1,8 +1,270 @@
 <template>
-  <div id="contact" class="section bg-white min-h-screen">
-    Contact
+  <div
+    id="contact"
+    class="section py-32 bg-white min-h-screen flex items-center"
+  >
+    <div class="contact-box flex w-4/5 mx-auto">
+      <div class="w-1/2 text-center flex justify-center items-center">
+        <div>
+          <div class="ml6">
+            <span class="text-wrapper">
+              <span class="letters">Kontakta mig</span>
+            </span>
+          </div>
+          <div class="mt-10">
+            <a href="mailto:valesca.sarrocchi.s@gmail.com">
+              <button
+                class="shadow text-white px-10 py-2 rounded transition duration-300 ease-in-out bg-indigo-900 hover:bg-red-500 transform hover:scale-105"
+              >
+                Skicka e-post
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="w-1/2 shadow border-solid border border-gray-400">
+        <gmap-map :center="center" :zoom="12" :options="options" class="h-full">
+          <gmap-marker
+            v-for="(item, index) in markers"
+            :key="index"
+            :position="item.position"
+            @click="center = item.position"
+          />
+        </gmap-map>
+      </div>
+    </div>
   </div>
 </template>
-<style lang="scss" scoped>
+
+<script>
+import anime from 'animejs/lib/anime.es'
+
+export default {
+  data() {
+    return {
+      textWrapper: null,
+      center: { lat: 59.334591, lng: 18.06324 },
+      markers: [
+        { position: { lat: -0.48585, lng: 117.1466 } },
+        { position: { lat: -6.9127778, lng: 107.6205556 } }
+      ],
+      options: {
+        styles: [
+          {
+            elementType: 'geometry',
+            stylers: [
+              {
+                color: '#f5f5f5'
+              }
+            ]
+          },
+          {
+            elementType: 'labels.icon',
+            stylers: [
+              {
+                visibility: 'off'
+              }
+            ]
+          },
+          {
+            elementType: 'labels.text.fill',
+            stylers: [
+              {
+                color: '#616161'
+              }
+            ]
+          },
+          {
+            elementType: 'labels.text.stroke',
+            stylers: [
+              {
+                color: '#f5f5f5'
+              }
+            ]
+          },
+          {
+            featureType: 'administrative.land_parcel',
+            elementType: 'labels.text.fill',
+            stylers: [
+              {
+                color: '#bdbdbd'
+              }
+            ]
+          },
+          {
+            featureType: 'poi',
+            elementType: 'geometry',
+            stylers: [
+              {
+                color: '#eeeeee'
+              }
+            ]
+          },
+          {
+            featureType: 'poi',
+            elementType: 'labels.text.fill',
+            stylers: [
+              {
+                color: '#757575'
+              }
+            ]
+          },
+          {
+            featureType: 'poi.park',
+            elementType: 'geometry',
+            stylers: [
+              {
+                color: '#e5e5e5'
+              }
+            ]
+          },
+          {
+            featureType: 'poi.park',
+            elementType: 'labels.text.fill',
+            stylers: [
+              {
+                color: '#9e9e9e'
+              }
+            ]
+          },
+          {
+            featureType: 'road',
+            elementType: 'geometry',
+            stylers: [
+              {
+                color: '#ffffff'
+              }
+            ]
+          },
+          {
+            featureType: 'road.arterial',
+            elementType: 'labels.text.fill',
+            stylers: [
+              {
+                color: '#757575'
+              }
+            ]
+          },
+          {
+            featureType: 'road.highway',
+            elementType: 'geometry',
+            stylers: [
+              {
+                color: '#dadada'
+              }
+            ]
+          },
+          {
+            featureType: 'road.highway',
+            elementType: 'labels.text.fill',
+            stylers: [
+              {
+                color: '#616161'
+              }
+            ]
+          },
+          {
+            featureType: 'road.local',
+            elementType: 'labels.text.fill',
+            stylers: [
+              {
+                color: '#9e9e9e'
+              }
+            ]
+          },
+          {
+            featureType: 'transit.line',
+            elementType: 'geometry',
+            stylers: [
+              {
+                color: '#e5e5e5'
+              }
+            ]
+          },
+          {
+            featureType: 'transit.station',
+            elementType: 'geometry',
+            stylers: [
+              {
+                color: '#eeeeee'
+              }
+            ]
+          },
+          {
+            featureType: 'water',
+            elementType: 'geometry',
+            stylers: [
+              {
+                color: '#c9c9c9'
+              }
+            ]
+          },
+          {
+            featureType: 'water',
+            elementType: 'labels.text.fill',
+            stylers: [
+              {
+                color: '#9e9e9e'
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  mounted() {
+    // Wrap every letter in a span
+    this.textWrapper = document.querySelector('.ml6 .letters')
+    this.textWrapper.innerHTML = this.textWrapper.textContent.replace(
+      /\S/g,
+      "<span class='letter'>$&</span>"
+    )
+
+    anime
+      .timeline({ loop: true })
+      .add({
+        targets: '.ml6 .letter',
+        translateY: ['1.1em', 0],
+        translateZ: 0,
+        duration: 750,
+        delay: (el, i) => 50 * i
+      })
+      .add({
+        targets: '.ml6',
+        opacity: 0,
+        duration: 1000,
+        easing: 'easeOutExpo',
+        delay: 1000
+      })
+  }
+}
+</script>
+
+<style lang="scss">
 @import '@/assets/css/styles.css';
+
+.contact-box {
+  height: 30rem;
+}
+
+.ml6 {
+  font-size: 2.5em;
+}
+
+.ml6 .text-wrapper {
+  overflow: hidden;
+}
+
+.ml6 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+#map {
+  height: 100%;
+}
+
+.letter {
+  font-family: 'Nothing You Could Do', cursive;
+}
 </style>

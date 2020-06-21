@@ -6,7 +6,7 @@
   >
     <div class="container flex justify-center items-center">
       <div class="header flex w-2/5">
-        <div class="relative hello svgHello">
+        <div class="relative hello">
           <svg
             class="header"
             width="119"
@@ -206,12 +206,8 @@
             />
           </svg>
         </div>
-        <div class="border1 w-7/12">
-          <img
-            class="border1"
-            src="../assets/images/about-bild.png"
-            alt="profilImage"
-          />
+        <div class="shadow w-6/12">
+          <img src="../assets/images/profilbild.png" alt="profilImage" />
         </div>
       </div>
       <div class="header w-2/5">
@@ -231,8 +227,8 @@
 @import '@/assets/css/styles.css';
 
 .hello {
-  top: -50px;
-  left: 80px;
+  top: -60px;
+  left: 50px;
   z-index: 2;
 }
 </style>

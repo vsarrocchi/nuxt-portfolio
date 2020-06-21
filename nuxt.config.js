@@ -1,8 +1,5 @@
 export default {
   mode: 'universal',
-  /*
-   ** Headers of the page
-   */
   head: {
     title: process.env.npm_package_name || '',
     meta: [
@@ -22,6 +19,11 @@ export default {
       },
       {
         rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap'
+      },
+      {
+        rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css?family=Quicksand&display=swap'
       },
       {
@@ -29,24 +31,19 @@ export default {
         href: 'https://use.fontawesome.com/releases/v5.6.1/css/all.css',
         crossorigin: 'anonymous'
       }
+    ],
+    script: [
+      {
+        src:
+          'https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js',
+        type: 'text/javascript'
+      }
     ]
   },
   script: [],
-  /*
-   ** Customize the progress-bar color
-   */
   loading: { color: '#fff' },
-  /*
-   ** Global CSS
-   */
   css: ['~/assets/css/styles.css'],
-  /*
-   ** Plugins to load before mounting the App
-   */
-  plugins: [],
-  /*
-   ** Nuxt.js dev-modules
-   */
+  plugins: ['@/plugins/google-maps'],
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
@@ -58,17 +55,11 @@ export default {
   optimizedImages: {
     optimizeImages: true
   },
-  /*
-   ** Nuxt.js modules
-   */
-  modules: [],
-  /*
-   ** Build configuration
-   */
+  env: {
+    VUE_APP_GOOGLE_MAPS_API_KEY: process.env.VUE_APP_GOOGLE_MAPS_API_KEY
+  },
+  modules: ['@nuxtjs/dotenv'],
   build: {
-    /*
-     ** You can extend webpack config here
-     */
     extend(config, ctx) {}
   },
   router: {

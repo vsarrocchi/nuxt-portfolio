@@ -50,7 +50,7 @@
 
   .social-media-contact i:hover {
     opacity: 1;
-    color: #ff4f94;
+    color: #f56565;
   }
 
   .social-media-box {

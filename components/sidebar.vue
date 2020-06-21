@@ -45,12 +45,12 @@ export default {}
   font-size: 2em;
   cursor: pointer;
   text-align: center;
-  color: #393939;
   transition: all 0.5s;
+  color: #393939;
 }
 
 #menu:hover {
-  color: #ff4f94;
+  color: #f56565;
   transform: rotate(90deg);
 }
 
@@ -96,7 +96,7 @@ li {
 
 li:hover {
   letter-spacing: 0.3em;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 #exit {
@@ -113,11 +113,11 @@ li:hover {
 #exit:hover {
   transform: translateX(5px);
   path {
-    fill: #ff4f94;
+    fill: #f56565;
   }
 }
 
 .active {
-  color: #0ccccc;
+  color: #f56565;
 }
 </style>
