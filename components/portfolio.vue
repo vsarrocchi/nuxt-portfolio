@@ -210,7 +210,7 @@
     opacity: 1;
   }
   &:hover {
-    background: linear-gradient(130deg, #f56565 0%, #f3cece 100%);
+    background: linear-gradient(130deg, #3c366b 0%, #7f9cf5 100%);
   }
 }
 </style>
