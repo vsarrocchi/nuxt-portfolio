@@ -43,7 +43,7 @@ export default {
   script: [],
   loading: { color: '#fff' },
   css: ['~/assets/css/styles.css'],
-  plugins: ['@/plugins/google-maps'],
+  plugins: ['@/plugins/vue2-google-maps'],
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
