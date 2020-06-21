@@ -1,7 +1,7 @@
 <template>
   <div>
     <div id="menu">|||</div>
-    <div id="lgMenu">
+    <div id="lgMenu" class="w-screen sm:w-screen md:w-2/6 lg:w-1/5 xl:w-1/5">
       <span id="exit">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
           <path
@@ -55,7 +55,7 @@ export default {}
 }
 
 #lgMenu {
-  width: 20%;
+  // width: 20%;
   height: 100vh;
   position: absolute;
   top: 0;

@@ -96,7 +96,7 @@
 /* SVG animation text */
 #myName {
   animation: fill 0.5s ease forwards 3.5s;
-  width: 50vw;
+  // width: 50vw;
   margin: 0 auto;
 }
 

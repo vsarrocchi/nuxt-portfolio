@@ -1,7 +1,9 @@
 <template>
   <div id="home" class="section home">
-    <Svganimation />
-    <div class="text-3xl">Frontend Developer</div>
+    <Svganimation class="w-3/4" />
+    <div class="sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
+      Frontend Developer
+    </div>
   </div>
 </template>
 

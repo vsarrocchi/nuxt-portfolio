@@ -1,10 +1,12 @@
 <template>
   <div
     id="contact"
-    class="section py-32 bg-white min-h-screen flex items-center"
+    class="section md:py-32 bg-white min-h-screen md:flex md:items-center"
   >
-    <div class="contact-box flex w-4/5 mx-auto">
-      <div class="w-1/2 text-center flex justify-center items-center">
+    <div class="contact-box md:flex md:w-4/5 mx-auto">
+      <div
+        class="w-full md:w-1/2 text-center flex justify-center items-center my-12 py-12"
+      >
         <div>
           <div class="ml6">
             <span class="text-wrapper">
@@ -22,7 +24,7 @@
           </div>
         </div>
       </div>
-      <div class="w-1/2 shadow border-solid border border-gray-400">
+      <div class="w-full h-full md:w-1/2 shadow">
         <gmap-map :center="center" :zoom="12" :options="options" class="h-full">
           <gmap-marker
             v-for="(item, index) in markers"
@@ -195,7 +197,10 @@ export default {
             elementType: 'geometry',
             stylers: [
               {
-                color: '#c9c9c9'
+                color: '#4c4c4c'
+                // color: '#707070'
+                // color: '#393939'
+                // color: '#c9c9c9'
               }
             ]
           },

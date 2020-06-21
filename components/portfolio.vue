@@ -1,15 +1,15 @@
 <template>
   <div
     id="portfolio"
-    class="portfolio-section section pt-16 pb-32 bg-whyte min-h-screen"
+    class="portfolio-section section pt-16 pb-16 md:pb-32 bg-whyte min-h-screen"
   >
     <div class="text-center portfolio-title w-4/5 mx-auto text-4xl pb-16">
       Projek under utbildningen
     </div>
-    <div class="container w-4/5 mx-auto min-h-screen grid gap-12 grid-cols-3">
+    <div class="grid-container md:w-4/5 mx-auto min-h-screen">
       <a
         href="https://flamboyant-curie-65a21c.netlify.com/"
-        class="border-double border border-gray-400 flex shadow-lg portfolio-item portfolio-item-1 w-full h-full"
+        class="border border-gray-400 flex shadow-lg portfolio-item portfolio-item-1 w-full h-full"
       >
         <span class="portfolio-item-text">
           <div class="text-xl">Band Site - Bob Marley</div>
@@ -25,7 +25,7 @@
       </a>
       <a
         href="https://lezcodeher.github.io/project-webshop/"
-        class="border-double border border-gray-400 flex shadow-lg portfolio-item portfolio-item-2 w-full h-full"
+        class="border border-gray-400 flex shadow-lg portfolio-item portfolio-item-2 w-full h-full"
       >
         <span class="portfolio-item-text">
           <div class="text-xl">Life Hacks - Webshop</div>
@@ -41,7 +41,7 @@
       </a>
       <a
         href="https://vssportfolio.netlify.app"
-        class="border-double border border-gray-400 flex shadow-lg portfolio-item portfolio-item-3 w-full h-full"
+        class="border border-gray-400 flex shadow-lg portfolio-item portfolio-item-3 w-full h-full"
       >
         <span class="portfolio-item-text">
           <div class="text-xl">My second Portfolio</div>
@@ -57,7 +57,7 @@
       </a>
       <a
         href="https://vsarrocchi.github.io/FrontendProjekt-Projekt2/"
-        class="border-double border border-gray-400 flex shadow-lg portfolio-item portfolio-item-4 w-full h-full"
+        class="border border-gray-400 flex shadow-lg portfolio-item portfolio-item-4 w-full h-full"
       >
         <span class="portfolio-item-text">
           <div class="text-xl">Live Art Gallery</div>
@@ -73,7 +73,7 @@
       </a>
       <a
         href="../assets/images/portfolio/grafikverktig.jpg"
-        class="border-double border border-gray-400 flex shadow-lg portfolio-item portfolio-item-5 flex justify-center w-full h-full"
+        class="border border-gray-400 flex shadow-lg portfolio-item portfolio-item-5 flex justify-center w-full h-full"
       >
         <span class="portfolio-item-text">
           <div class="text-xl">Art Gallery - Mockup</div>
@@ -88,7 +88,7 @@
       </a>
       <a
         href="https://mmdarrah.github.io/SuperHero4rent/"
-        class="border-double border border-gray-400 flex shadow-lg portfolio-item portfolio-item-6 w-full h-full"
+        class="border border-gray-400 flex shadow-lg portfolio-item portfolio-item-6 w-full h-full"
       >
         <span class="portfolio-item-text">
           <div class="text-xl">SuperHero for hire</div>
@@ -104,7 +104,7 @@
       </a>
       <a
         href="https://vsarrocchi.github.io/Projektarbete-HTML-CSS/"
-        class="border-double border border-gray-400 flex shadow-lg portfolio-item portfolio-item-7 w-full h-full"
+        class="border border-gray-400 flex shadow-lg portfolio-item portfolio-item-7 w-full h-full"
       >
         <span class="portfolio-item-text">
           <div class="text-xl">Flexbox vs Grid</div>
@@ -120,7 +120,7 @@
       </a>
       <a
         href="#"
-        class="border-double border border-gray-400 flex shadow-lg portfolio-item portfolio-item-8 border w-full h-full"
+        class="border border-gray-400 flex shadow-lg portfolio-item portfolio-item-8 border w-full h-full"
       >
         <span class="portfolio-item-text">
           <div class="text-xl">Journal</div>
@@ -141,25 +141,15 @@
 <style lang="scss" scoped>
 @import '@/assets/css/styles.css';
 
-.container {
-  justify-items: center;
-  align-items: center;
-  grid-template-rows: auto;
-  grid-template-areas:
-    'item1 item2 item3'
-    'item4 item4 item5'
-    'item4 item4 item5'
-    'item6 item7 item8';
-}
-
 .portfolio-section {
   background-color: #f4f4f4;
 }
-
 .portfolio-title {
   font-family: 'Nothing You Could Do', cursive;
 }
-
+.grid-container a {
+  margin-bottom: 20px;
+}
 .portfolio-item-1 {
   grid-area: item1;
 }
@@ -210,7 +200,26 @@
     opacity: 1;
   }
   &:hover {
-    background: linear-gradient(130deg, #3c366b 0%, #7f9cf5 100%);
+    // background: linear-gradient(130deg, #1a202c 0%, #a0aec0 100%);
+    background: #393939;
+    opacity: 0.9;
+  }
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'item1 item2 item3'
+      'item4 item4 item5'
+      'item4 item4 item5'
+      'item6 item7 item8';
+  }
+  .grid-container a {
+    margin-bottom: unset;
   }
 }
 </style>

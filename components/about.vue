@@ -4,8 +4,8 @@
     class="about section bg-white min-h-screen flex justify-center"
     data-hasAppeared="false"
   >
-    <div class="container flex justify-center items-center">
-      <div class="header flex w-2/5">
+    <div class="container flex items-center">
+      <div class="header flex w-2/5 pl-10">
         <div class="relative hello">
           <svg
             class="header"
@@ -206,17 +206,23 @@
             />
           </svg>
         </div>
-        <div class="shadow w-6/12">
+        <div class="shadow-lg w-7/12">
           <img src="../assets/images/profilbild.png" alt="profilImage" />
         </div>
       </div>
-      <div class="header w-2/5">
-        <p class="text-xl font-hairline p-3 m-3">
-          I am a FrontEnd developer student at Nackademin in Stockholm who is
-          currently looking for an internship. I have just finished the first
-          year of the program. During this time I gained experience working with
-          JavaScript, jQuery, JSON, HTML, CSS, Git, GitHub, Bootstrap, Sass,
-          PHP, SQL, WordPress, Photoshop and Illustrator, among other skills.
+      <div class="header w-3/5">
+        <p class="text-base font-hairline leading-loose pr-20">
+          Jag är en nyexaminerad Frontend utvecklare från Nackademin i
+          Stockholm. Min utbildning bestod av två år i vilka ingick två LIA
+          perioder. Under hela den perioden i skolan och praktiken lärde jag mig
+          bland annat: JavaScript, HTML och CSS. CSS ramverk och preprocessor
+          som: Sass, Bootstrap, Vuetify, Tailwind. JavaScript ramverk och
+          bibliotek: React och Gatsby, Vue och Nuxt. Grunden till Jekyll som är
+          en statik sidogenerator skriven i Ruby. Grunden till Angular och
+          TypeScript. Test ramverk Jest och Jasmin. Grafiskt verktyg som Adobe
+          Photoshop, Illustrator och XD, Figma, Gimp. CMS-verktyg: Contentful
+          och grunden till Wordpress. Backend och interaktion med databaser:
+          Grunden till PHP, SQL och MySQL. Git och GitHub.
         </p>
       </div>
     </div>
