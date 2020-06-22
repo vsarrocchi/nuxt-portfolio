@@ -9,7 +9,7 @@
     <div class="grid-container md:w-4/5 mx-auto min-h-screen">
       <a
         href="https://flamboyant-curie-65a21c.netlify.com/"
-        class="border border-gray-400 flex shadow-lg portfolio-item portfolio-item-1 w-full md:h-full"
+        class="border border-gray-400 md:flex shadow-lg portfolio-item portfolio-item-1 w-full h-full"
       >
         <span class="portfolio-item-text">
           <div class="text-xl">Band Site - Bob Marley</div>
