@@ -73,7 +73,7 @@
       </a>
       <a
         href="../assets/images/portfolio/grafikverktig.jpg"
-        class="border border-gray-400 flex shadow-lg portfolio-item portfolio-item-5 flex justify-center h-56 w-full md:h-full"
+        class="border border-gray-400 flex shadow-lg portfolio-item portfolio-item-5 flex justify-center w-full h-full"
       >
         <span class="portfolio-item-text">
           <div class="text-xl">Art Gallery - Mockup</div>
