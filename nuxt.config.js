@@ -68,8 +68,7 @@ export default {
   },
   modules: ['@nuxtjs/dotenv'],
   build: {
-    extend(config, ctx) {},
-    transpile: [/^vue2-google-maps($|\/)/]
+    extend(config, ctx) {}
   },
   router: {
     linkActiveClass: 'active-link'
