@@ -32,7 +32,7 @@ export default {
     }
   },
   methods: {
-    // isElementInViewport and checkForVisibility used in about svg animation
+    // isElementInViewport and checkForVisibility used in about parallax animation
     isElementInViewport(el) {
       const rect = el.getBoundingClientRect()
 

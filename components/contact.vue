@@ -22,15 +22,21 @@
             </div>
             <div class="text-left my-4 flex">
               <i class="fa fa-phone-square px-2"></i>
-              076-7086167
+              <div>
+                076-7086167
+              </div>
             </div>
             <div class="text-left my-4 flex">
               <i class="fab fa-linkedin px-2"></i>
-              https://linkedin.com/in/valesca-sarrocchi
+              <div>
+                https://linkedin.com/in/valesca-sarrocchi
+              </div>
             </div>
             <div class="text-left my-4 flex">
               <i class="fab fa-github px-2"></i>
-              https://github.com/vsarrocchi
+              <div>
+                https://github.com/vsarrocchi
+              </div>
             </div>
           </div>
           <div class="mt-10">
@@ -49,14 +55,14 @@
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d130265.72825472063!2d17.84197085843541!3d59.326241967042534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f763119640bcb%3A0xa80d27d3679d7766!2sStockholm!5e0!3m2!1ssv!2sse!4v1592803653234!5m2!1ssv!2sse"
           class="w-full h-full"
         ></iframe> -->
-        <gmap-map :center="center" :zoom="12" :options="options" class="h-full">
+        <!-- <gmap-map :center="center" :zoom="12" :options="options" class="h-full">
           <gmap-marker
             v-for="(item, index) in markers"
             :key="index"
             :position="item.position"
             @click="center = item.position"
           />
-        </gmap-map>
+        </gmap-map> -->
       </div>
     </div>
   </div>

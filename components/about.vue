@@ -5,15 +5,15 @@
     data-hasAppeared="false"
   >
     <div class="container pb-20 pt-10 md:py-20 md:flex items-center">
-      <div class="hidden md:block absolute hello">
+      <div class="hidden md:block absolute hello header">
         <AboutSvgAnimation />
       </div>
-      <div class="flex w-11/12 md:w-2/5 mx-auto py-10">
+      <div class="flex w-11/12 md:w-2/5 mx-auto py-10 header">
         <div class="border shadow-lg w-7/12 mx-auto">
           <img src="../assets/images/profilbild.png" alt="profilImage" />
         </div>
       </div>
-      <div class="w-11/12 md:w-3/5 mx-auto">
+      <div class="w-11/12 md:w-3/5 mx-auto header">
         <p class="font-hairline leading-loose md:pr-20">
           Jag är en nyexaminerad Frontend utvecklare från Nackademin i
           Stockholm. Min utbildning bestod av två år i vilka ingick två LIA
