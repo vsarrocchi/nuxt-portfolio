@@ -205,8 +205,8 @@
 @import '@/assets/css/styles.css';
 
 .hello {
-  top: 950px;
-  left: 140px;
+  top: 965px;
+  left: 180px;
   z-index: 2;
 }
 </style>

@@ -4,7 +4,7 @@
     class="about section bg-white min-h-screen flex justify-center"
     data-hasAppeared="false"
   >
-    <div class="container pb-20 pt-10 md:py-20 md:flex items-center">
+    <div class="md:w-4/5 pb-20 pt-10 md:py-20 md:flex items-center">
       <div class="hidden md:block absolute hello header">
         <AboutSvgAnimation />
       </div>
