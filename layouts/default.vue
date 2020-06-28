@@ -47,29 +47,34 @@ export default {
     },
     checkForVisibility() {
       const headers = document.querySelectorAll('.header')
+      const screenWidth = screen.width
 
       headers.forEach((header) => {
-        if (this.isElementInViewport(header)) {
-          if (header.dataset.hasAppeared === 'true') {
+        if (screenWidth >= 768) {
+          if (this.isElementInViewport(header)) {
+            if (header.dataset.hasAppeared === 'true') {
+            } else {
+              header.classList.add('headerVisible')
+              const svgPath = document.querySelectorAll('.path')
+              anime({
+                targets: svgPath,
+                loop: false,
+                opacity: 1,
+                strokeDashoffset: [anime.setDashoffset, 0],
+                easing: 'easeInOutSine',
+                duration: 350,
+                delay: (el, i) => {
+                  return i * 100
+                }
+              })
+              header.dataset.hasAppeared = 'true'
+            }
           } else {
-            header.classList.add('headerVisible')
-            const svgPath = document.querySelectorAll('.path')
-            anime({
-              targets: svgPath,
-              loop: false,
-              opacity: 1,
-              strokeDashoffset: [anime.setDashoffset, 0],
-              easing: 'easeInOutSine',
-              duration: 350,
-              delay: (el, i) => {
-                return i * 100
-              }
-            })
-            header.dataset.hasAppeared = 'true'
+            header.classList.remove('headerVisible')
+            header.dataset.hasAppeared = 'false'
           }
         } else {
-          header.classList.remove('headerVisible')
-          header.dataset.hasAppeared = 'false'
+          header.classList.remove('header')
         }
       })
     }
