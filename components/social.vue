@@ -24,9 +24,7 @@
 @import '@/assets/css/styles.css';
 
 .social-media-contact {
-  display: flex;
-  justify-content: center;
-  z-index: 111;
+  display: none;
 }
 
 .social-media-contact i {
@@ -36,8 +34,9 @@
 
 @media (min-width: 768px) {
   .social-media-contact {
+    display: flex;
     flex-direction: column;
-    justify-content: unset;
+    z-index: 111;
     margin: 15px 15px 15px 0;
     position: fixed;
     bottom: 0;

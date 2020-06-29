@@ -15,7 +15,6 @@ export default {
       }
     ],
     link: [
-      // { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
         rel: 'stylesheet',
         href:
@@ -45,6 +44,10 @@ export default {
         src:
           'https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js',
         type: 'text/javascript'
+      },
+      {
+        src: 'https://polyfill.io/v3/polyfill.min.js?features=default',
+        type: 'text/javascript'
       }
     ]
   },
@@ -62,9 +65,6 @@ export default {
   ],
   optimizedImages: {
     optimizeImages: true
-  },
-  env: {
-    VUE_APP_GOOGLE_MAPS_API_KEY: process.env.VUE_APP_GOOGLE_MAPS_API_KEY
   },
   modules: ['@nuxtjs/dotenv'],
   build: {
