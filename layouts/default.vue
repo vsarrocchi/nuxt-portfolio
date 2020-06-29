@@ -21,9 +21,10 @@ export default {
   },
   mounted() {
     // google maps
-    const mapApi = process.env.VUE_APP_GOOGLE_MAPS_API_KEY
+    // const mapApi = process.env.NUXT_GOOGLE_MAPS_API_KEY
     const script = document.createElement('script')
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${mapApi}&callback=initMap`
+    script.src =
+      'https://maps.googleapis.com/maps/api/js?key=AIzaSyAxKKo6pVqmJtEuL1R7uiuiZpisbv2GDCI&callback=initMap'
     script.defer = true
     script.async = true
     // eslint-disable-next-line no-unused-vars
