@@ -6,7 +6,7 @@
     <div class="text-center portfolio-title w-4/5 mx-auto text-4xl pb-16">
       Projek under utbildningen
     </div>
-    <div class="grid-container md:w-4/5 mx-auto min-h-screen">
+    <div class="grid-container sm:w-3/5 md:w-4/5 mx-auto min-h-screen">
       <a
         href="https://flamboyant-curie-65a21c.netlify.com/"
         class="border border-gray-400 flex shadow-lg portfolio-item portfolio-item-1 h-56 w-full md:h-full"
