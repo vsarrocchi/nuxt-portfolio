@@ -5,17 +5,17 @@
       href="https://github.com/vsarrocchi"
       target="_blank"
     >
-      <i class="fab fa-github"></i>
+      <i class="fab fa-github" aria-hidden="true"></i>
     </a>
     <a
       class="social-media-box"
       href="https://linkedin.com/in/valesca-sarrocchi"
       target="_blank"
     >
-      <i class="fab fa-linkedin"></i>
+      <i class="fab fa-linkedin" aria-hidden="true"></i>
     </a>
     <a class="social-media-box" href="mailto:valesca.sarrocchi.s@gmail.com">
-      <i class="fa fa-envelope"></i>
+      <i class="fa fa-envelope" aria-hidden="true"></i>
     </a>
   </div>
 </template>

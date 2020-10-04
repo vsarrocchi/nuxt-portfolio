@@ -1,9 +1,13 @@
 <template>
   <div class="footer-section py-10 text-center">
-    <a href="/#home" class="scrollTop text-5xl cursor-pointer">
-      <i class="fa fa-angle-up"></i>
+    <a
+      href="/#home"
+      class="scrollTop text-5xl cursor-pointer"
+      aria-label="Till toppen av sidan"
+    >
+      <i class="fa fa-angle-up" aria-hidden="true"></i>
     </a>
-    <div>Built by Valesca Sarrocchi</div>
+    <div>Skapad av Valesca Sarrocchi</div>
   </div>
 </template>
 

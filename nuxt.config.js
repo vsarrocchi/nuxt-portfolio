@@ -1,6 +1,9 @@
 export default {
   mode: 'universal',
   head: {
+    htmlAttrs: {
+      lang: 'sv'
+    },
     title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },

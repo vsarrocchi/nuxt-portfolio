@@ -13,16 +13,16 @@
       <div id="exit2">
         <ul>
           <li>
-            <a href="#home" class="active">Home</a>
+            <a href="#home" class="active">Hemsida</a>
           </li>
           <li>
-            <a href="#about">About</a>
+            <a href="#about">Om mig</a>
           </li>
           <li>
             <a href="#portfolio">Portfolio</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#contact">Kontakt</a>
           </li>
         </ul>
       </div>

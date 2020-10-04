@@ -15,27 +15,33 @@
           </div>
           <div class="contact-info">
             <div class="text-left my-4 flex">
-              <i class="fa fa-envelope px-2"></i>
+              <i class="fa fa-envelope px-2" aria-hidden="true"></i>
               <div>
-                valesca.sarrocchi.s@gmail.com
+                <a href="mailto:valesca.sarrocchi.s@gmail.com"
+                  >valesca.sarrocchi.s@gmail.com</a
+                >
               </div>
             </div>
             <div class="text-left my-4 flex">
-              <i class="fa fa-phone-square px-2"></i>
+              <i class="fa fa-phone-square px-2" aria-hidden="true"></i>
               <div>
-                076-7086167
+                <a href="tel:0767086167">076-7086167</a>
               </div>
             </div>
             <div class="text-left my-4 flex">
-              <i class="fab fa-linkedin px-2"></i>
+              <i class="fab fa-linkedin px-2" aria-hidden="true"></i>
               <div>
-                https://linkedin.com/in/valesca-sarrocchi
+                <a href="https://linkedin.com/in/valesca-sarrocchi"
+                  >https://linkedin.com/in/valesca-sarrocchi</a
+                >
               </div>
             </div>
             <div class="text-left my-4 flex">
-              <i class="fab fa-github px-2"></i>
+              <i class="fab fa-github px-2" aria-hidden="true"></i>
               <div>
-                https://github.com/vsarrocchi
+                <a href="https://github.com/vsarrocchi"
+                  >https://github.com/vsarrocchi</a
+                >
               </div>
             </div>
           </div>
