@@ -48,7 +48,7 @@
           <div class="mt-10">
             <a href="mailto:valesca.sarrocchi.s@gmail.com">
               <button
-                class="shadow text-white px-10 py-2 rounded transition duration-300 ease-in-out bg-indigo-900 hover:bg-red-500 transform hover:scale-105"
+                class="shadow text-white px-10 py-2 rounded transition duration-300 ease-in-out hover:bg-red-500 transform hover:scale-105"
               >
                 Skicka e-post
               </button>
@@ -276,7 +276,7 @@ export default {
         opacity: 0,
         duration: 1000,
         easing: 'easeOutExpo',
-        delay: 1000
+        delay: 4000
       })
   }
 }
@@ -316,5 +316,9 @@ export default {
     font-size: 1.5em;
     width: 50px;
   }
+}
+
+button {
+  background-color: #4c4c4c;
 }
 </style>

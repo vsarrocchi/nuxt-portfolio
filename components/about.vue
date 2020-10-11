@@ -8,18 +8,25 @@
       <!-- <div class="hidden md:block absolute hello header">
         <AboutSvgAnimation />
       </div> -->
+      <div class="flex w-11/12 md:w-2/5 mx-auto py-10 header">
+        <div class="w-9/12 mx-auto">
+          <!-- <div class="border shadow-lg w-7/12 mx-auto"> -->
+          <!-- <img src="../assets/images/profilbild.png" alt="profilImage" /> -->
+          <img src="../assets/images/profil-image-2.png" alt="profilImage" />
+        </div>
+      </div>
       <div class="w-11/12 md:w-3/5 mx-auto header">
         <h1 class="about-title text-4xl">Om mig</h1>
         <p class="md:pr-20 tracking-wide leading-relaxed my-5">
-          Mitt namn är Valesca Sarrocchi och jag är en nyexaminerad Frontend
-          utvecklare från Nackademin i Stockholm. Just nu jobbar jag deltid i
-          ett nystartat företag som jobbar med digital tillgänglighet. Mitt jobb
-          där handlar framför allt om att göra analyser av digitala gränssnitt
-          gentemot WCAG och hitta tillgänglighets brister samt ge råd om hur de
-          brister skulle kunna lösas.
+          Jag är en nyexaminerad Frontend utvecklare från Nackademin i
+          Stockholm. Just nu jobbar jag deltid i ett nystartat företag som
+          jobbar med digital tillgänglighet. Mitt jobb där handlar framför allt
+          om att göra analyser av digitala gränssnitt gentemot WCAG och hitta
+          tillgänglighets brister samt ge råd om hur de brister skulle kunna
+          lösas.
         </p>
         <p class="md:pr-20 tracking-wide leading-relaxed my-5">
-          Under utbildningen lärde jag mig bland annat:
+          Under utbildningen på Nackademin lärde jag mig bland annat:
         </p>
         <ul class="tracking-wide leading-relaxed my-5 list-disc list-inside">
           <li>JavaScript, HTML och CSS.</li>
@@ -43,13 +50,6 @@
           </li>
           <li>Git och GitHub.</li>
         </ul>
-      </div>
-      <div class="flex w-11/12 md:w-2/5 mx-auto py-10 header">
-        <div class="w-9/12 mx-auto">
-          <!-- <div class="border shadow-lg w-7/12 mx-auto"> -->
-          <!-- <img src="../assets/images/profilbild.png" alt="profilImage" /> -->
-          <img src="../assets/images/profil-image.png" alt="profilImage" />
-        </div>
       </div>
     </div>
   </div>

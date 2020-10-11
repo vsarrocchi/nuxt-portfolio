@@ -99,7 +99,7 @@ export default {
             elementType: 'geometry',
             stylers: [
               {
-                color: '#e5e5e5'
+                color: '#f56565'
               }
             ]
           },
@@ -136,6 +136,7 @@ export default {
             stylers: [
               {
                 color: '#dadada'
+                // color: '#f56565'
               }
             ]
           },
