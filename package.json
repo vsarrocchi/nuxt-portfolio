@@ -19,7 +19,7 @@
     "fs": "0.0.1-security",
     "imagemin": "^7.0.1",
     "imagemin-mozjpeg": "^8.0.0",
-    "nuxt": "^2.0.0",
+    "nuxt": "^3.4.3",
     "vue-scrollactive": "^0.8.0",
     "vue2-google-maps": "^0.10.7"
   },
